@@ -26,7 +26,7 @@ document.addEventListener("mousemove", (e) => {
 
 //hover sur elem clickble, je prends même ceux que j'ai pas fait comme ça c déjà fait si jamais
 document
-  .querySelectorAll("a, button, input, label, [onclick]")
+  .querySelectorAll("a, button, input, label, [onclick], iframe")
   .forEach((el) => {
     el.addEventListener("mouseenter", () => {
       targetColor = { r: 255, g: 255, b: 255 }; // blanc
@@ -101,6 +101,26 @@ document.addEventListener("click", (e) => {
   setTimeout(() => {
     ripple.remove();
   }, 600);
+});
+
+//cacher la souris si elle entre dans un iframe
+const cometCanvas = document.getElementById("comet");
+
+//F° hide / show
+function hideCursorAndCanvas() {
+  cometCanvas.style.display = "none";
+  cursor.style.display = "none";
+}
+
+function showCursorAndCanvas() {
+  cometCanvas.style.display = "block";
+  cursor.style.display = "block";
+}
+
+//appliquer
+document.querySelectorAll("iframe, section.preview-site").forEach((el) => {
+  el.addEventListener("mouseenter", hideCursorAndCanvas);
+  el.addEventListener("mouseleave", showCursorAndCanvas);
 });
 
 //Video planete pour changer à la static one.

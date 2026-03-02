@@ -29,7 +29,9 @@ body {
 body, a, button, input, label, [onclick] {
   cursor: none !important; /*enlève le curseur sous sur la page et les hovers*/
 }
-
+iframe {
+  pointer-events: auto; /* permet le hover dans l'iframe */
+}
 /*canva pr la souris*/
 #comet {
   position: fixed;
