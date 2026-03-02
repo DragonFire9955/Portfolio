@@ -1,0 +1,23 @@
+Thème événement : Compétition E-Sport
+
+Descriptif Thématique :
+
+Notre base de données a été conçue avec l’objectif de faciliter la
+gestion et l’organisation des compétitions e-sport sur un plan global.
+Le public ciblé est les entreprises qui ont en charge la gestion de ces
+événements.
+
+La base de données propose la gestion de l'événement de sa
+planification jusqu’à sa réalisation. En conséquence, elle prend en
+charge la gestion de la billetterie, l'inscription des compétiteurs et de
+leurs équipements, le suivi de la compétition ainsi que l’enregistrement
+victoires et défaites de chaque match.
+
+L’aspect financier est également intégré dans la base de données. Elle
+se compose d’un suivi des différentes recettes (via le sponsoring et le
+ticketing) et des dépenses (dépenses publicitaires, embauche du
+personnel, achat de matériel, etc.).
+
+Enfin, la base de données stockera toutes les autres données utiles à
+l’organisation des événements e-sport tel que lieu.
+

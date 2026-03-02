@@ -1,0 +1,209 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio Thomas Pinçon</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Cursor perso-->
+    <canvas id="comet"></canvas>
+    <div class="cursor"></div>
+
+    <header>
+        <div id="logo"><a href="https://www.linkedin.com/in/thomas-pinçon-45447836a"></a></div>
+        <a id="redirProjets" href="#projets"></a>
+        <a id="redirParcours"  href="#parcours"></a>
+        <a id="redirAPropos"  href="#aPropos"></a>
+    </header>
+    <video autoplay muted playsinline id="videoMainPage">
+        <source src="Content/PlanetMove.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+    </video>
+
+    <h1 id="projets">Projets</h1>
+
+    <!--Jeu de Plateau-->
+    <article>
+        <h2>Création du jeu de plateau <i>Sur la route du Mineur</i></h2>
+        <div>
+            <p>
+                Pendant mon année à l’IIM Digital School, j’ai développé mes compétences en <span>marketing</span> et en <span>anglais</span> à travers 
+                des projets de groupe variés, mêlant culture générale et informatique.
+                Ma plus grande réussite a été lors d’un concours interne réunissant toutes les premières années : 
+                en équipe de quatre, nous avons conçu un jeu de plateau en un temps limité et avons remporté la <span>3ᵉ 
+                place</span> sur plus de 40 équipes avec «<span><i>Sur la route du mineur</i></span>». Cette expérience m’a permis de renforcer ma créativité, 
+                mon <span>esprit d’équipe</span> et ma capacité à <span>gérer un projet</span> sous contrainte de temps.
+            </p>
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/kJY9VT0Recw" title="YouTube video player">
+            </iframe>
+        <br>
+        </div>
+    </article>
+
+    <!--Dev Web-->
+    <article>
+        <h2>Création du site <i>Eco Jeun's</i></h2>
+        <div>
+            <p>
+                Ces projets m’ont permis d’explorer de nouveaux horizons et de mieux appréhender les compétences que je pourrai développer 
+                au cours de ces trois années de Bachelor. Grâce à ces travaux, et dans mon rôle de <span>chef de projet</span>, j’ai pu renforcer les bases acquises 
+                ces dernières années, notamment en matière de <span>gestion du temps</span>, de <span>planification des tâches</span> et 
+                d’<span>organisation du travail</span> au sein d’une équipe. Vous trouverez ci-dessous un aperçu du site web que nous avons réalisé pour le groupe
+                 «<span><i>Éco-Jeun’s</i></span>», présenté en décembre 2025 :
+            </p>
+        </div>
+        <section class="preview-site"><iframe src="https://dragonfire9955.github.io/" width="100%" height="600" style="border: none;" loading="lazy"></iframe></section>
+    </article>
+    
+    <!--Machine Virtuelle-->
+    <article>
+        <h2>Création et configuration d’une machine virtuelle avec VirtualBox</h2>
+        <div>
+            <!--Carrousel pres Machine Virtuelle-->
+            <div class="containerCarrousel">
+                <div class="carrousel">
+                    <div class="carrouselInner">
+                        <div class="slidesCarrousel">
+                            <img src="Content/VM1.png" alt="image machine virtuelle 1">
+                        </div>
+                        <div class="slidesCarrousel">
+                            <img src="Content/VM2.png" alt="image machine virtuelle 2">
+                        </div>
+                        <div class="slidesCarrousel">
+                            <img src="Content/VM3.png" alt="image machine virtuelle 3">
+                        </div>
+                        <div class="slidesCarrousel">
+                            <img src="Content/VM4.png" alt="image machine virtuelle 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                En 2025, j’ai réalisé un projet de <span>création et de configuration d’une machine virtuelle</span> en utilisant le logiciel <span>VirtualBox</span>. 
+                Ce projet s’inscrit dans mon parcours en informatique et m’a permis d’approfondir ma compréhension des <span>technologies de virtualisation</span>, 
+                largement utilisées dans les environnements professionnels.
+                Ce projet m’a permis de développer des compétences en <span>administration système</span>, 
+                en <span>gestion d’environnements virtualisés</span> et en <span>résolution de problèmes techniques</span>.
+            </p>
+        </div>
+    </article>
+
+    <!--Base de Donnée-->
+    <article>
+        <h2>Création d'une base de donnée pour un événement esport</h2>
+        <div>
+            <p>
+                En 2025, j’ai conçu une base de données pour <span>gérer un événement e-sport</span>, centralisant les informations sur les participants, 
+                les équipes, les matchs et les résultats ainsi que le budget et le ticketing. J’ai réalisé un <span>Modèle Conceptuel des Traitements</span>, 
+                ainsi que un <span>Modèle Conceptuel de Données</span> et le <span>Modèle Conceptuel de Communication</span> lié, puis j'y ai implémenté des 
+                <span>requêtes SQL</span> pour <span>gérer</span> et <span>consulter</span> les données efficacement.
+            </p>
+            <!--Bouton pour ouvrir la fenêtre -->
+            <button id="toggleWorkspace" onclick="toggleWorkspace()">📂 Ouvrir l’espace de travail</button>
+
+            <!--Fenêtre Workspace-->
+            <div id="workspace" class="hidden">
+            <div class="header" id="header">
+                <span>Espace de travail</span>
+                <button onclick="toggleWorkspace()" style="background-color: gray; border-radius: 5px;">❌</button>
+            </div>
+
+            <div id="folders">
+                <div class="folder" onclick="openFolder('script')">📁 script</div>
+                <div class="folder" onclick="openFolder('imagesModel')">📁 imagesModel</div>
+                <div class="folder" onclick="openFolder('descriptif')">📁 descriptif</div>
+            </div>
+
+            <div id="content"></div>
+            </div>
+
+            <!--Popup pour PNG-->
+            <div id="popup" class="hidden">
+            <button onclick="closePopup()">❌</button>
+            <div id="popupContent"></div>
+            </div>
+
+        </div>
+    </article>
+    
+    <article>
+        <h2>Création d'un jeu de plateau en Java</h2>
+        <div>
+        <video controls preload="auto" poster="Content/shogiPoster.png" id="videoShogi">
+            <source src="Content/presentationShogi.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+            <p>
+                La vidéo présentée à gauche montre un aperçu du travail que j’ai réalisé lors d’un rush intensif d’<span>un mois</span>, en décembre 2025. 
+                Ce projet consistait en la <span>conception et le développement d’un jeu de plateau</span>, le <i>Shogi</i>, implémenté sous forme de terminal. 
+                L’application a été programmée en <span>Java</span>, à l’aide de l’environnement de développement <span><i>IntelliJ IDEA</i></span>.
+                Ce rush m’a permis de mettre en pratique mes compétences en <span>programmation</span>, en <span>logique de jeu</span> et en 
+                <span>gestion de projet</span> sur une durée courte mais exigeante.
+            </p>
+        </div>
+    </article>
+
+    <!--Gameplay IIM-->
+    <article>
+        <h2>Création du jeu de plateau <i>Sur la route du Mineur</i></h2>
+        <div>
+            <p>
+                J’ai réalisé un <span>jeu vidéo en 2D</span> à l’aide du moteur <span><i>Unity</i></span>, en prenant en charge l’<span>intégralité</span> de son développement. 
+                Ce projet m’a permis de <span>concevoir</span> et d’<span>implémenter</span> l’ensemble du gameplay, depuis la <span>programmation des mécaniques</span>
+                 de jeu jusqu’à l’<span>organisation</span> et la <span>structure</span> des niveaux. J’ai également créé les <span>designs graphiques</span></span>, en veillant 
+                à leur cohérence visuelle et à leur intégration dans l’expérience de jeu. 
+                Ce projet illustre ma capacité à <span>mener un développement de jeu complet</span>, en combinant <span>créativité</span>, <span>logique de conception</span>
+                et <span>compétences techniques</span>. <br>
+                Par exemple, la <span class="graphicDesign"><u>fée</u><span class="overlay"><img src="Content/fairyIdleDoomedForest.gif" alt="gif d'une fée"></span></span> 
+                ou le <span class="graphicDesign"><u>personnage</u><span class="overlay"><img src="Content/characterIdleDoomedForest.gif" alt="gif du personnage"></span></span>.
+                <br>(passer votre souris sur les mots clés)
+                 
+            </p>
+            <video controls src="Content/gameplayDoomedForest.mp4" style="width: 500px;"></video>
+        <br>
+        </div>
+    </article>
+
+
+
+    <h1 id="parcours">Parcours</h1>
+    <article>
+        <h2><li>2021</li></h2>
+        <div><p>Obtention du Brevet Général avec la mention <i>Bien</i></p></div>
+        <h2><li>2023</li></h2>
+        <div><p>Obtention du baccalauréat général de français</p></div>
+        <h2><li>2024</li></h2>
+        <div><p>Obtention du baccalauréat général avec la mention <i>Assez Bien</i></p></div>
+        <h2><li>2025</li></h2>
+        <div><p>Entretien de fin de semestre réussi à l'<i>IIM Digital School</i></p></div>
+        <h2><li>2026</li></h2>
+        <div><p>Premier semestre validé à l'<i>IUT Informatique de Montreuil</i></p></div>
+    </article>
+
+    <div class="interpages">
+        <img src="Content/Interpages.png" alt="interpages">
+        <img src="Content/Interpages.png" alt="interpages">
+        <img src="Content/Interpages.png" alt="interpages">
+        <img src="Content/Interpages.png" alt="interpages">
+        <img src="Content/Interpages.png" alt="interpages">
+        <img src="Content/Interpages.png" alt="interpages">
+        <img src="Content/Interpages.png" alt="interpages">
+        <img src="Content/Interpages.png" alt="interpages">
+    </div>
+    
+    <h1 id="aPropos">À propos</h1>
+    <div id="CV">
+        <img src="Content/CV2026.png" alt="Mon cv">
+        <br>
+        <a download="Content/CV2026Download.pdf" href="">Télécharger le cv</a>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
